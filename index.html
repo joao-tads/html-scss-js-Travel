@@ -13,11 +13,30 @@
     />
     <link rel="stylesheet" href="./src/css/style.css" />
     <!-- title -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/title/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/title/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/titlee/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/title/site.webmanifest" />
     <title>Travel</title>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo"><i class="fas fa-paper-plabe"></i> Travel</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <a href="#" class="logo"><i class="fas fa-paper-plane"></i> Travel</a>
       <nav class="navbar">
         <a href="#home" id="home">Início</a>
         <a href="#about" id="home">Sobre</a>
@@ -26,10 +45,90 @@
         <a href="#gallery" id="home">Galeria</a>
         <a href="#blogs" id="home">Blogs</a>
       </nav>
+
+      <a href="#book-now" class="btn">agendar agora</a>
       <!-- navbar -->
     </header>
     <!-- header -->
-    <!-- script -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <span>Sia-nos</span>
+        <h3>Para o desconhecido</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          quos nihil odio similique rem ullam eum earum perferendis officiis
+          eaque!
+        </p>
+        <a href="#" class="btn">Agende agora</a>
+      </div>
+      <!-- content -->
+    </section>
+    <!-- home -->
+
+    <section class="book-form" id="book-form">
+      <form action="">
+        <div class="inputBox">
+          <span>Para onde?</span>
+          <input type="text" placeholder="Nome do lugar..." />
+        </div>
+        <!-- inputBox -->
+        <div class="inputBox">
+          <span>Quando?</span>
+          <input type="date" />
+        </div>
+        <!-- inputBox -->
+        <div class="inputBox">
+          <span>Quantos viajantes?</span>
+          <input type="number" min="1" placeholder="Número de viajantes..." />
+        </div>
+        <!-- inputBox -->
+        <input type="submit" value="Agendar agora" class="btn" />
+      </form>
+    </section>
+    <!-- book-form -->
+
+    <section class="about" id="about">
+      <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video
+          src="./src/video/about-vid-1.mp4"
+          muted
+          autoplay
+          loop
+          class="video"
+        ></video>
+        <div class="controls">
+          <span
+            class="controls-btn"
+            data-src="./src/video/about-vid-1.mp4"
+          ></span>
+          <span
+            class="controls-btn"
+            data-src="./src/video/about-vid-2.mp4"
+          ></span>
+          <span
+            class="controls-btn"
+            data-src="./src/video/about-vid-3.mp4"
+          ></span>
+        </div>
+        <!-- controls -->
+      </div>
+      <!-- video-container -->
+      <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>Porque escolher-nos?</span>
+        <h3>A majestosa natureza espera por você</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis
+          mollitia velit expedita enim voluptatibus voluptatem pariatur iure
+          necessitatibus totam.
+        </p>
+        <a href="#" class="btn">Saiba mais</a>
+      </div>
+      <!-- content -->
+    </section>
+    <!-- about -->
+
     <script src="./src/js/script.js"></script>
+    <!-- script -->
   </body>
 </html>
