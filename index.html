@@ -11,7 +11,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link rel="stylesheet" href="./src/css/style.css" />
+
     <!-- title -->
     <link
       rel="apple-touch-icon"
@@ -36,31 +41,47 @@
   <body>
     <header class="header">
       <div id="menu-btn" class="fas fa-bars"></div>
-      <a href="#" class="logo"><i class="fas fa-paper-plane"></i> Travel</a>
+      <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"
+        ><i class="fas fa-paper-plane"></i> Travel</a
+      >
       <nav class="navbar">
-        <a href="#home" id="home">Início</a>
-        <a href="#about" id="home">Sobre</a>
-        <a href="#destination" id="home">Destino</a>
-        <a href="#services" id="home">Serviços</a>
-        <a href="#gallery" id="home">Galeria</a>
-        <a href="#blogs" id="home">Blogs</a>
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Início</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">Sobre</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination"
+          >Destino</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services"
+          >Serviços</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery"
+          >Galeria</a
+        >
+        <a data-aos="zoom-in-left" data-aos-delay="1050" href="#blogs">Blogs</a>
       </nav>
 
-      <a href="#book-now" class="btn">agendar agora</a>
+      <a
+        href="#book-now"
+        class="btn"
+        data-aos="zoom-in-left"
+        data-aos-delay="1300"
+        >agendar agora</a
+      >
       <!-- navbar -->
     </header>
     <!-- header -->
 
     <section class="home" id="home">
       <div class="content">
-        <span>Sia-nos</span>
-        <h3>Para o desconhecido</h3>
-        <p>
+        <span data-aos="fade-up" data-aos-delay="150">Sia-nos</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">Para o desconhecido</h3>
+        <p data-aos="fade-up" data-aos-delay="450">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           quos nihil odio similique rem ullam eum earum perferendis officiis
           eaque!
         </p>
-        <a href="#" class="btn">Agende agora</a>
+        <a href="#" class="btn" data-aos="fade up" data-aos-delay="600"
+          >Agende agora</a
+        >
       </div>
       <!-- content -->
     </section>
@@ -68,66 +89,564 @@
 
     <section class="book-form" id="book-form">
       <form action="">
-        <div class="inputBox">
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
           <span>Para onde?</span>
           <input type="text" placeholder="Nome do lugar..." />
         </div>
         <!-- inputBox -->
-        <div class="inputBox">
+        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
           <span>Quando?</span>
           <input type="date" />
         </div>
         <!-- inputBox -->
-        <div class="inputBox">
+        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
           <span>Quantos viajantes?</span>
           <input type="number" min="1" placeholder="Número de viajantes..." />
         </div>
         <!-- inputBox -->
-        <input type="submit" value="Agendar agora" class="btn" />
+        <input
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          type="submit"
+          value="Agendar agora"
+          class="btn"
+        />
       </form>
     </section>
     <!-- book-form -->
 
     <section class="about" id="about">
-      <div class="video-container" data-aos="fade-right" data-aos-delay="300">
-        <video
-          src="./src/video/about-vid-1.mp4"
-          muted
-          autoplay
-          loop
-          class="video"
-        ></video>
-        <div class="controls">
-          <span
-            class="controls-btn"
-            data-src="./src/video/about-vid-1.mp4"
-          ></span>
-          <span
-            class="controls-btn"
-            data-src="./src/video/about-vid-2.mp4"
-          ></span>
-          <span
-            class="controls-btn"
-            data-src="./src/video/about-vid-3.mp4"
-          ></span>
+      <div class="heading">
+        <span>Quem somos</span>
+        <h1>Realizadores de sonhos</h1>
+      </div>
+      <!-- heading -->
+      <div class="box-container">
+        <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+          <video
+            src="./src/video/about-vid-1.mp4"
+            muted
+            autoplay
+            loop
+            class="video"
+          ></video>
+          <div class="controls">
+            <span
+              class="controls-btn"
+              data-src="./src/video/about-vid-1.mp4"
+            ></span>
+            <span
+              class="controls-btn"
+              data-src="./src/video/about-vid-2.mp4"
+            ></span>
+            <span
+              class="controls-btn"
+              data-src="./src/video/about-vid-3.mp4"
+            ></span>
+          </div>
+          <!-- controls -->
         </div>
-        <!-- controls -->
+        <!-- video-container -->
+        <div class="content" data-aos="fade-left" data-aos-delay="600">
+          <span>Porque escolher-nos?</span>
+          <h3>A majestosa natureza espera por você</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            nobis mollitia velit expedita enim voluptatibus voluptatem pariatur
+            iure necessitatibus totam.
+          </p>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
+        <!-- content -->
       </div>
-      <!-- video-container -->
-      <div class="content" data-aos="fade-left" data-aos-delay="600">
-        <span>Porque escolher-nos?</span>
-        <h3>A majestosa natureza espera por você</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nobis
-          mollitia velit expedita enim voluptatibus voluptatem pariatur iure
-          necessitatibus totam.
-        </p>
-        <a href="#" class="btn">Saiba mais</a>
-      </div>
-      <!-- content -->
+      <!-- box-container -->
     </section>
     <!-- about -->
 
+    <section class="destination" id="destination">
+      <div class="heading">
+        <span>Nossos destinos</span>
+        <h1>Faça seu destino</h1>
+      </div>
+      <!-- heading -->
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <div class="image">
+            <img src="./src/img/des-1.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="image">
+            <img src="./src/img/des-2.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <div class="image">
+            <img src="./src/img/des-3.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <div class="image">
+            <img src="./src/img/des-4.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="750">
+          <div class="image">
+            <img src="./src/img/des-5.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="900">
+          <div class="image">
+            <img src="./src/img/des-6.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="1150">
+          <div class="image">
+            <img src="./src/img/des-7.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="1300">
+          <div class="image">
+            <img src="./src/img/des-8.jpg" />
+          </div>
+          <!-- image -->
+          <div class="content">
+            <h3>Tour & Viagens</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </section>
+    <!-- destination -->
+
+    <section class="services" id="services">
+      <div class="heading">
+        <span>Nossos serviços</span>
+        <h1>Incontáveis experiências</h1>
+      </div>
+      <!-- heading -->
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+          <i class="fas fa-globe"></i>
+          <h3>No mundo todo</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+          <i class="fas fa-hiking"></i>
+          <h3>Aventura</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+          <i class="fas fa-utensils"></i>
+          <h3>Comidas & bebidas</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+          <i class="fas fa-hotel"></i>
+          <h3>Ótimos hotéis</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+          <i class="fas fa-wallet"></i>
+          <h3>Preços acessíveis</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Suporte</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+            dolorum!
+          </p>
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </section>
+    <!-- services -->
+
+    <section class="gallery" id="gallery">
+      <div class="heading">
+        <span>Nossa galeria</span>
+        <h1>Nós gravamos memórias</h1>
+      </div>
+      <!-- heading -->
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+          <img src="./src/img/gallery-img-1.jpg" />
+          <span>Local de viagem</span>
+          <h3>Islândia</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+          <img src="./src/img/gallery-img-2.jpg" />
+          <span>Local de viagem</span>
+          <h3>Groenlândia</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+          <img src="./src/img/gallery-img-3.jpg" />
+          <span>Local de viagem</span>
+          <h3>Alaska</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+          <img src="./src/img/gallery-img-4.jpg" />
+          <span>Local de viagem</span>
+          <h3>Tailândia</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+          <img src="./src/img/gallery-img-5.jpg" />
+          <span>Local de viagem</span>
+          <h3>Brasil</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
+          <img src="./src/img/gallery-img-6.jpg" />
+          <span>Local de viagem</span>
+          <h3>Tailândia</h3>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="1050">
+          <img src="./src/img/gallery-img-7.jpg" />
+          <span>Local de viagem</span>
+          <h3>Maldivas</h3>
+        </div>
+        <!-- box -->
+        <div
+          class="box"
+          class="box"
+          data-aos="zoom-in-up"
+          data-aos-delay="1200"
+        >
+          <img src="./src/img/gallery-img-8.jpg" />
+          <span>Local de viagem</span>
+          <h3>Tailândia</h3>
+        </div>
+        <!-- box -->
+        <div
+          class="box"
+          class="box"
+          data-aos="zoom-in-up"
+          data-aos-delay="1350"
+        >
+          <img src="./src/img/gallery-img-9.jpg" />
+          <span>Local de viagem</span>
+          <h3>Maldivas</h3>
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </section>
+    <!-- gallery -->
+
+    <section class="review">
+      <div class="content" data-aos="fade-right" data-aos-delay="150">
+        <span>Depoimentos</span>
+        <h3>boas notícias de nossos clientes</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam mollitia
+          assumenda illo ab temporibus magnam ex veniam ea qui laudantium!
+        </p>
+      </div>
+      <!-- content -->
+      <div class="box-container" data-aos="fade-left" data-aos-delay="300">
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
+            eveniet!
+          </p>
+          <div class="user">
+            <img src="./src/img/pic-1.png" />
+          </div>
+          <div class="info">
+            <h3>Jhon Deo</h3>
+            <span>Designer</span>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
+            eveniet!
+          </p>
+          <div class="user">
+            <img src="./src/img/pic-2.png" />
+          </div>
+          <div class="info">
+            <h3>Jhon Deo</h3>
+            <span>Designer</span>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
+            eveniet!
+          </p>
+          <div class="user">
+            <img src="./src/img/pic-3.png" />
+          </div>
+          <div class="info">
+            <h3>Jhon Deo</h3>
+            <span>Designer</span>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
+            eveniet!
+          </p>
+          <div class="user">
+            <img src="./src/img/pic-4.png" />
+          </div>
+          <div class="info">
+            <h3>Jhon Deo</h3>
+            <span>Designer</span>
+          </div>
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </section>
+    <!-- review -->
+
+    <section class="blogs" id="blogs">
+      <div class="heading">
+        <span>Blogs & postagens</span>
+        <h1>Nós não contamos histórias</h1>
+      </div>
+      <!-- heading -->
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <div class="image">
+            <img src="./src/img/blog-1.jpg" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">A vida é uma jornada, não um destino</a>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, quidem?
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 22-12-2021</a>
+              <a href="#"><i class="fas fa-user"></i> Admin</a>
+            </div>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <div class="image">
+            <img src="./src/img/blog-2.jpg" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">A vida é uma jornada, não um destino</a>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, quidem?
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 22-12-2021</a>
+              <a href="#"><i class="fas fa-user"></i> Admin</a>
+            </div>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <div class="image">
+            <img src="./src/img/blog-3.jpg" />
+          </div>
+          <div class="content">
+            <a href="#" class="link">A vida é uma jornada, não um destino</a>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, quidem?
+            </p>
+            <div class="icon">
+              <a href="#"><i class="fas fa-clock"></i> 22-12-2021</a>
+              <a href="#"><i class="fas fa-user"></i> Admin</a>
+            </div>
+          </div>
+          <!-- content -->
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </section>
+    <!-- blogs -->
+
+    <div class="banner">
+      <div class="content" data-aos="zoom-in-up" data-aos-delay="150">
+        <span>Comece sua Aventura</span>
+        <h3>Vamos explorar este mundo</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          repellendus harum sapiente! Animi dolorem culpa necessitatibus
+          voluptatem assumenda sequi totam.
+        </p>
+        <a href="#book-form" class="btn">Agendar agora</a>
+      </div>
+      <!-- content -->
+    </div>
+    <!-- banner -->
+
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+          <a href="#" class="logo">
+            <i class="fas fa-paper-plane"></i> Travel
+          </a>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            enim.
+          </p>
+          <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="#" class="fab fa-github-alt"></a>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+          <a href="#home" class="links"
+            ><i class="fas fa-arrow-right"></i> Início</a
+          >
+          <a href="#about" class="links"
+            ><i class="fas fa-arrow-right"></i> Sobre</a
+          >
+          <a href="#destination" class="links"
+            ><i class="fas fa-arrow-right"></i> Destino</a
+          >
+          <a href="#services" class="links"
+            ><i class="fas fa-arrow-right"></i> Serviços</a
+          >
+          <a href="#gallery" class="links"
+            ><i class="fas fa-arrow-right"></i> Galeria</a
+          >
+          <a href="#blogs" class="links"
+            ><i class="fas fa-arrow-right"></i> Blogs</a
+          >
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+          <p><i class="fas fa-phone"></i> +00 (00) 0 0000-0000</p>
+          <p><i class="fas fa-map"></i> Brasil, Rio de Janeiro (00000-000)</p>
+          <p><i class="fas fa-envelope"></i> exemplo@email.com</p>
+          <p><i class="fas fa-clock"></i> 7:00am - 10:00pm</p>
+        </div>
+        <!-- box -->
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <h3>Boletim de Notícias</h3>
+          <p>Inscreva-se para as últimas atualizações</p>
+          <form action="">
+            <input
+              type="email"
+              placeholder="Coloque seu e-amil..."
+              class="email"
+            />
+            <input type="submit" value="Inscrever-se" class="btn" />
+          </form>
+        </div>
+        <!-- box -->
+      </div>
+      <!-- box-container -->
+    </footer>
+    <!-- footer -->
+
+    <div class="credit">
+      Criado por <span>Mr. Web Desing</span> | traduzido por
+      <span>João Guedes</span><br />
+      &copysr; todos os diretitos reservados
+    </div>
+    <!-- credit -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="./src/js/script.js"></script>
     <!-- script -->
   </body>

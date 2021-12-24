@@ -16,3 +16,8 @@ document
       document.querySelector('.about .video-container .video').src = src
     }
   })
+
+AOS.init({
+  duration: 800,
+  offset: 150
+})
